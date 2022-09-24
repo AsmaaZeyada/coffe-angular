@@ -1,0 +1,61 @@
+<section id="footer">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-5 col-md-6">
+        <h6>About Us</h6>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+          sed do eiusmod tempor incididunt ut labore dolore magna aliqua.
+        </p>
+        <p>Copyright ©2018 All rights reserved | This template is made with
+          <span>&#9829;</span> by
+          <a href="https://colorlib.com">Colorlib</a>
+        </p>
+      </div>
+      <div class="col-lg-5 col-md-6">
+        <h6>Newsletter</h6>
+        <p>Stay update with our latest</p>
+        <div id="form">
+          <form [formGroup]="newsLetterForm" (ngSubmit)="onSubmit()">
+            <input
+              formControlName="useremail"
+              id="useremail"
+              type="email" />
+            <button type="submit" id="submit">
+              <i class="fas fa-long-arrow-alt-right"></i>
+            </button>
+            <div>
+              <span class="submitting" *ngIf="submitted">Submitting...</span>
+            </div>
+            <div
+              class="error">
+              <span *ngIf="!newsLetterForm.get('useremail').touched && !sendData">Please enter a value</span>
+              <span
+                *ngIf="notVailed">
+                Please enter a vailed email address (Sample@sample.com)
+              </span>
+            </div>
+            <div>
+              <span
+                class="success"
+                *ngIf="sendData">
+                We have sent you a confirmation email Follow Us Let us be social
+              </span>
+            </div>
+          </form>
+        </div>
+      </div>
+      <div class="col-lg-2 col-md-6 follow" >
+        <h6>Follow Us</h6>
+        <p>Let us be social</p>
+        <ul>
+          <li><i class="fab fa-facebook-f"></i></li>
+          <li><i class="fab fa-twitter"></i></li>
+          <li><i class="fab fa-dribbble"></i></li>
+          <li><i class="fab fa-behance"></i></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+</section>

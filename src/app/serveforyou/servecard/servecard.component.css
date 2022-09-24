@@ -1,0 +1,43 @@
+img{
+  width: 80%;
+}
+
+ul{
+  padding-top: 1em;
+}
+
+ul li{
+  display:inline-block;
+  padding-right: 20px;
+}
+
+ul li button{
+  background-color: white;
+  padding: 2px 5px 2px 5px;
+  outline: none;
+  border-radius: 10px;
+  border-radius: 24px;
+  width: 81px;
+  border: 1px solid #eee;
+  font-size: 14px;
+}
+
+ul li button:hover{
+  cursor: pointer;
+  background-color: #b68834;
+  color: white;
+}
+
+h3{
+  font-size: 23px;
+}
+
+p{
+  color: #777;
+}
+
+p.date{
+  color: black;
+}
+
+

@@ -1,0 +1,51 @@
+.coffeeheader{
+  background-image: url('../../assets/images/header-bg.jpg');
+  width: 100vw;
+  height: 100vh;
+  background-size: cover;
+}
+
+h1,h2{
+  font-family: 'Josefin Sans', sans-serif;
+}
+
+h1,h6{
+  color:white;
+  position: absolute;
+  display: block;
+  left: 100px;
+}
+
+h6{
+  margin-top: 130px;
+  font-weight: bold;
+  font-size: 12px;
+}
+
+h1{
+  text-align: left;
+  margin-top: 184px;
+  font-size: 60px;
+  font-weight: 600;
+  max-width: 550px;
+}
+
+/* devices from small to labtop */
+@media only screen and (min-width: 0px) and (max-width: 991px) {
+  h1{
+    font-size: 40px;
+  }
+
+}
+
+/* devices from small to labtop */
+@media only screen and (max-width: 600px) {
+  h1{
+    font-size: 30px;
+  }
+
+  h1,h6{
+    left: 10px;
+  }
+
+}

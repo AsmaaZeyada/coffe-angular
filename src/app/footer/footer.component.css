@@ -1,0 +1,105 @@
+#footer{
+  background: url('../../assets/images/footer-bg.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: white;
+  background-position-x: -460px;
+  padding-top: 220px;
+  overflow: hidden;
+
+}
+
+.row{
+  padding-bottom: 12em;
+}
+
+h6{
+  text-align: left;
+  font-weight: bold;
+  padding-bottom: 10px;
+}
+
+p{
+  font-weight: 100;
+  padding: 10px 0 10px 0px;
+  color: #ffffffeb;
+  width: 90%;
+}
+
+p span{
+  color: #b68834;
+  font-size: 22px;
+}
+
+a{
+  color: #b68834;
+  text-decoration: none;
+}
+
+ul{
+  margin-top: -20px;
+}
+
+ul li{
+  display: inline;
+  padding-right: 20px;
+  font-size: 14px;
+}
+
+ul li:last-child{
+  padding-right: 0px;
+}
+
+button{
+  background-color: #b68834;
+  border: 2px solid #b68834;
+  outline: none;
+  color: white;
+  padding: 5px 10px 5px 10px;
+  box-shadow: -1px 0px 0px white;
+}
+
+ul li:hover,
+button:hover{
+  cursor: pointer;
+}
+
+input:focus,
+button:active{
+  outline: 4px solid #347cb661;
+}
+
+input{
+  outline: none;
+  padding: 5px;
+  width: 80%;
+  color: #777;
+}
+
+.error, .submitting{
+  font-size: 12px;
+  padding-top: 3em;
+}
+
+.error{
+  color: red;
+}
+
+.success{
+  font-size: 12px;
+  color: green;
+  position: absolute;
+}
+
+.follow{
+  padding-top:2em;
+}
+
+/* devices from small to labtop */
+@media only screen and (min-width: 0px) and (max-width: 991px) {
+
+  #footer{
+    background-position-x: -1140px;
+  }
+
+}

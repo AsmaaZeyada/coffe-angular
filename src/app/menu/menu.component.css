@@ -1,0 +1,30 @@
+#menu{
+  background-image: url('../../assets/images/menu-bg.jpg');
+  width: 100vw;
+  /* height: 100vh; */
+}
+
+#menu h1{
+  text-align: center;
+  padding-top: 3em;
+  width: 70%;
+  display: block;
+  margin: auto;
+  font-weight: bold;
+  font-family: 'Josefin Sans', sans-serif;
+}
+
+#menu h6{
+  text-align: center;
+  padding-top: 1em;
+  padding-bottom: 4em;
+  width: 50%;
+  display: block;
+  margin: auto;
+  color: #777777;
+  font-family: 'Josefin Sans', sans-serif;
+}
+
+.list{
+  padding-bottom: 4em;
+}

@@ -1,0 +1,14 @@
+<section id="menu">
+  <h1>What kind of Coffee we serve for you</h1>
+  <h6>Who are in extremely love with eco friendly system.</h6>
+  <div class="row list">
+    <div
+      class="col-lg-4"
+      *ngFor="let card of cardList">
+      <app-card
+        cardTitle={{card.title}}
+        cardText={{card.text}}
+        cardPrice={{card.price}}></app-card>
+    </div>
+  </div>
+</section>

@@ -1,0 +1,22 @@
+#ratings{
+  background-color: #b68834;
+  color: white;
+  font-family: 'Josefin Sans', sans-serif;
+}
+
+h1{
+  padding-top: 3em;
+}
+
+h6{
+  padding-bottom: 4em;
+  color: #ffffffd6;
+}
+
+.review{
+  padding-bottom: 4em;
+}
+
+.numbers{
+  padding-bottom: 6em;
+}

@@ -1,0 +1,15 @@
+.starRating{
+  font-size: 12px;
+  width: 105px;
+  display: inline-block;
+  padding-left: 10px;
+}
+
+.starRating ul li{
+  padding-right: 4px;
+  display: inline-block;
+}
+
+.starChecked{
+  color: orange;
+}

@@ -1,0 +1,188 @@
+.navtop{
+  /* background: rgba(20, 2, 0, 0); */
+  height: 80px;
+  color:#eaeaea;
+  position: fixed;
+  z-index: 999;
+  font-family: 'Josefin Sans', sans-serif;
+  animation-name: notshowfullnav;
+  animation-duration: 0.5s;
+  animation-fill-mode: forwards;
+}
+
+.navShowFull{
+  animation-name: showfullnav;
+  animation-duration: 0.5s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes showfullnav {
+  from { background: rgba(20, 2, 0, 0);}
+  to { background: rgba(20, 2, 0, 0.8); }
+}
+
+@keyframes notshowfullnav {
+  from {background: rgba(20, 2, 0, 0.8); }
+  to { background: rgba(20, 2, 0, 0); }
+}
+
+
+.navtop img{
+  width: 122px;
+  position: absolute;
+  top: 30px;
+  left: 100px;
+}
+
+.stickynav,
+.opentimes{
+  display: inline-flex;
+  position: absolute;
+  right: 85px;
+  list-style: none;
+}
+
+.opentimes{
+  top: 10px;
+  font-size: 14px;
+}
+.stickynav{
+  padding: 5px;
+  top: 35px;
+  font-size: 12px;
+}
+
+.opentimes li:last-child,
+.stickynav li:last-child {
+  padding-right: 0;
+}
+
+.opentimes li,
+.stickynav li {
+  padding-right: 20px;
+}
+
+.stickynav li a{
+  color:#eaeaea;
+  text-decoration: none;
+}
+
+.stickynav li a:hover {
+  cursor: pointer;
+}
+
+.stickynav li a.active{
+  border-bottom: 1px solid #eaeaea;
+}
+
+#toggleClose{
+  display: none;
+}
+
+/* devices from small to labtop */
+@media only screen and (min-width: 0px) and (max-width: 991px) {
+
+  .navtop img{
+    left: 50px;
+    width: 100px;
+  }
+
+  .opentimes{
+    display: none;
+  }
+
+  .stickynav{
+    top: 30px;
+  }
+}
+
+/* devices from small to labtop */
+@media only screen and (max-width: 800px) {
+
+  #toggleClose{
+    display: block;
+    right: 40px;
+    top: 20px;
+    position: absolute;
+  }
+
+  #toggleClose:hover{
+    cursor: pointer;
+  }
+
+  .navtop{
+    width: 100vw;
+  }
+
+  .navtop img{
+    left: 10px;
+    width: 90px;
+  }
+
+  nav{
+    position: absolute;
+    background: rgba(0, 0, 0, 0.8);
+    top:0;
+    left:-250px;
+    width: 250px;
+    height: 100vh;
+    z-index: 2;
+    box-shadow: -1px 0px 6px #2a2a2a;
+    /* overflow: hidden; */
+  }
+
+  .stickynav{
+    display: block;
+    left: 0;
+    color: white;
+    font-weight: bold;
+    position: absolute;
+    z-index: 999;
+  }
+
+  .stickynav li{
+    padding: 14px;
+  }
+
+  .mobileIcon{
+    width: 100vw;
+    background-color:rgba(5, 5, 5, 0.89);
+    position: fixed;
+    left:0;
+    font-size: 24px;
+  }
+
+  .slideOver{
+    animation-name: OVR;
+    animation-duration: 0s;
+    animation-fill-mode: forwards;
+  }
+
+  @keyframes OVR {
+    from {height:0vh;}
+    to {height: 100vh; }
+  }
+
+  .slideIn{
+    animation-name: IN;
+    animation-duration: 0.5s;
+    animation-fill-mode: forwards;
+  }
+
+  @keyframes IN {
+    from {left: -250px}
+    to {left: 0px}
+  }
+
+  .slideOut{
+    animation-name: OUT;
+    animation-duration: 0.5s;
+    animation-fill-mode: forwards;
+  }
+
+  @keyframes OUT {
+    from {left: 0px}
+    to {left: -250px}
+  }
+
+}

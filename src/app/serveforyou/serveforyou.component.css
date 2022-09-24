@@ -1,0 +1,22 @@
+#serveforyou{
+  padding-top: 6em;
+  padding-bottom: 6em;
+  font-family: 'Josefin Sans', sans-serif;
+}
+
+h6{
+  padding-bottom: 4em;
+  color: #777777;
+}
+
+/* devices from small to labtop */
+@media only screen and (min-width: 0px) and (max-width: 991px) {
+  .t1{
+    padding-bottom: 3em;
+  }
+
+  #serveforyou{
+    padding-top: 3em;
+    padding-bottom: 3em;
+  }
+}

@@ -1,0 +1,30 @@
+#images{
+  padding-top: 6em;
+  padding-bottom: 4em;
+}
+
+h1{
+  font-weight: bold;
+  font-family: 'Josefin Sans', sans-serif;
+}
+
+h6{
+  color: #777;
+  padding-bottom: 4em;
+  font-family: 'Josefin Sans', sans-serif;
+}
+
+img{
+  width: 100%;
+  margin: auto;
+  padding-bottom: 2em;
+}
+
+/* devices from small to labtop */
+@media only screen and (min-width: 0px) and (max-width: 991px) {
+  img{
+    width: 80%;
+    display: block;
+    margin: auto;
+  }
+}

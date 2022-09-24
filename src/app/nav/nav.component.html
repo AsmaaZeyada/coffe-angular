@@ -1,0 +1,33 @@
+<div class="container-fluid navtop" [ngClass]="{'navShowFull': addNavClass}">
+  <img src="assets/images/logo.png" >
+  <nav [ngClass]="{'slideIn': open, 'slideOut': !open}">
+    <ul class="opentimes">
+      <li>Mon-Fri:8am to 2pm</li>
+      <li>Sat-Sun:11am to 4pm</li>
+      <li>(010) 62447780</li>
+    </ul>
+    <ul class="stickynav">
+      <li>
+        <a href="#header" class="active" (click)="toggleClass()">{{'home' | uppercase}}</a>
+      </li>
+      <li>
+        <a href="#aboutSection" (click)="toggleClass()">{{'about' | uppercase}}</a>
+      </li>
+      <li>
+        <a href="#ratings" (click)="toggleClass()">{{'review' | uppercase}}</a>
+      </li>
+      <li>
+        <a href="#serveforyou" (click)="toggleClass()">{{'Blog' | uppercase}}</a>
+      </li>
+      <li>
+        <a href="#" (click)="toggleClass()">{{'pages' | uppercase}}</a>
+      </li>
+    </ul>
+  </nav>
+  <div class="mobileIcon" [ngClass]="{'slideOver': open}">
+    <div id="toggleClose" (click)="toggleClass()">
+      <i *ngIf="open" class="fas fa-times"></i>
+      <i *ngIf="!open" class="fas fa-bars"></i>
+    </div>
+  </div>
+</div>

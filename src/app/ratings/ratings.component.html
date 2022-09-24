@@ -1,0 +1,38 @@
+<section id="ratings">
+  <h1>What kind of Coffee we serve for you</h1>
+  <h6>Who are in extremely love with eco friendly system.</h6>
+  <div id="reviws" class="row review">
+    <div class="col-lg-6" *ngFor="let review of reviews">
+      <app-review
+        reviewLogo={{review.logo}}
+        reviewTitle={{review.title}}
+        reviewText={{review.text}}
+        reviewRating={{review.rating}}
+      ></app-review>
+    </div>
+  </div>
+  <div class="container numbers">
+    <div class="row ">
+      <div class="col-lg-3 col-md-6 col-sm-12">
+        <app-stats
+          [count]="stats['happyClients']"
+          title="Happy Client"></app-stats>
+      </div>
+      <div class="col-lg-3 col-md-6 col-sm-12">
+        <app-stats
+          [count]="stats['totalProjects']"
+          title="Total Projects"></app-stats>
+      </div>
+      <div class="col-lg-3 col-md-6 col-sm-12">
+        <app-stats
+          [count]="stats['cupsOfCoffee']"
+          title="Cups Coffee"></app-stats>
+      </div>
+      <div class="col-lg-3 col-md-6 col-sm-12">
+        <app-stats
+          [count]="stats['totalSubmitted']"
+          title="Total Submitted"></app-stats>
+      </div>
+    </div>
+  </div>
+</section>

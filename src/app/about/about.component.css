@@ -1,0 +1,60 @@
+.about{
+  padding-top: 6em;
+}
+
+.video{
+  background-image: url('../../assets/images/video-bg.jpg');
+  background-size: cover;
+  background-position-x: -27px;
+  width: 80%;
+  min-height: 311px;
+  display: block;
+  margin: auto;
+  border-radius: 30px;
+  margin-bottom: 3em;
+}
+
+.overlay{
+  background-color: #222222;
+  background-image: url('../../assets/images/play-icon.png');
+  background-repeat: no-repeat;
+  background-position-x: 50%;
+  background-position-y: 50%;
+  background-size: auto;
+  opacity: .9;
+  width: 100%;
+  min-height: 311px;
+  border-radius: 30px;
+}
+
+.aboutcontent{
+  width: 74%;
+  display: block;
+  margin: auto;
+}
+
+h6{
+  color: #b68834;
+  font-size: 12px;
+  text-align: left;
+}
+
+h1{
+  max-width: 330px;
+  font-size: 36px;
+  color: #222222;
+  line-height: 1.2em !important;
+  margin-bottom: 0;
+  margin-top: 0;
+  font-weight: 600;
+  padding-bottom: 1em;
+  text-align: left;
+}
+
+p.p2{
+  color: #777777;
+  font-family: "Poppins", sans-serif;
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 1.625em;
+}
